@@ -1,0 +1,97 @@
+h1 { 
+    color:black;
+} 
+.bg-primary {
+    color: bisque;
+}
+#header {
+    color: red;
+}
+.content {
+    padding: 100px;
+    border: 1px dotted black;
+    background-color: darkkhaki;
+
+    position: relative;
+}
+
+.text {
+    color: blue !important;
+}
+
+
+.pos {
+    width: 100px;
+    height: 30px;
+    background-color: cadetblue;
+    z-index: 10;
+
+
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+.pos2  {
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    z-index: 50;
+
+    position: relative;
+    top:0px;
+    left:0px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+.card {
+    width: 300px;
+    height: 250px;
+    background-color: bisque;
+    border: 1px solid black;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.card_image {
+width: 80%;
+height: 80px;
+}
+.card_text {
+width: 80%;
+font-size: 12px;
+line-height: 16px;
+font-weight: bold;
+}
+.card_button {
+position: absolute;
+bottom: 10px;
+width: 80%;
+}
+
+.card_button_sell {
+    background-color: coral;
+}
+@media (max-width: 390px) {
+    
+    .card {
+        width: 100%;
+    }
+    .card_text {
+        font-size: 10px;
+    }
+    .card_button {
+        width: 80px;
+    }
+}
+@media (min-width: 690px) and (max-width: 720px) {
+    .card {
+        background-color: aqua;
+    }
+}
+@media (min-width: 390px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
